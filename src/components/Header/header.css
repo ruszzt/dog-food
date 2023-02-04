@@ -1,0 +1,29 @@
+header {
+    background-color: rgb(255, 213, 73);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    /* padding: 20px; */
+}
+.logo {
+    font-size: 1.5em;
+}
+.search {
+    border-radius: 0.5em;
+    background-color: #fff;
+    border: 1px solid #222;
+    outline: none;
+}
+.search:focus {
+    border-color: #222;
+    border: 2px solid #222;
+}
+.menu {
+    display: flex;
+    gap: 1em;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
