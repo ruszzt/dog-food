@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import "./header.css";
+import Search from "../Search/search";
 
-export default ({user, setUser}) => {
+export default ({user, setUser, products}) => {
 
     // const [user, setUser] = useState(localStorage.getItem("ruszzt"));
 
@@ -25,7 +26,7 @@ export default ({user, setUser}) => {
     return (
         <header>
             <a className="logo" href="">DogFood</a>
-            <input type="search" placeholder="Поиск" className="search"/>
+            <Search data={products}/>
             <nav className="menu">
                 {user && <a href="">{user}</a>}
                 {!user && <a href="" onClick={logIn}>Войти</a>}

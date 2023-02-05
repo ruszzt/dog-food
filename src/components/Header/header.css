@@ -9,7 +9,7 @@ header {
 .logo {
     font-size: 1.5em;
 }
-.search {
+/* .search {
     border-radius: 0.5em;
     background-color: #fff;
     border: 1px solid #222;
@@ -18,7 +18,7 @@ header {
 .search:focus {
     border-color: #222;
     border: 2px solid #222;
-}
+} */
 .menu {
     display: flex;
     gap: 1em;

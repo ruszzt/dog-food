@@ -6,13 +6,14 @@ import products from "./assets/data.json";
 import Home from "./pages/Home.jsx";
 import Catalog from "./pages/Catalog.jsx";
 
+
 const smiles = ["-_-", "0_0", ":D", "=*", "@_@", "=)"];
 
 const App = () => {
     const [user, setUser] = useState(localStorage.getItem("ruszzt"));
     return (
         <div className="container">
-            <Header user={user} setUser={setUser}/>
+            <Header user={user} setUser={setUser} products={products}/>
             <main>
                 {user ? <Catalog data={products}/> : <Home data={smiles}/>}
             </main>
