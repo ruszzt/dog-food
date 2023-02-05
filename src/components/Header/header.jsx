@@ -1,21 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import "./header.css";
 
-export default () => {
-    let user = localStorage.getItem("ruszzt")
+export default ({user, setUser}) => {
+
+    // const [user, setUser] = useState(localStorage.getItem("ruszzt"));
+
+    // let user = localStorage.getItem("ruszzt")
 
     const logIn = (e) => {
         e.preventDefault();
         let name = prompt("Ваше имя");
         if (name) {
             localStorage.setItem("ruszzt", name);
-            user = name;
+            setUser(name);
         }
     }
 
     const logOut = (e) => {
         e.preventDefault();
         localStorage.removeItem("ruszzt");
+        setUser("");
     }
 
     return (
