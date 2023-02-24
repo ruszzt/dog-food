@@ -2,19 +2,13 @@ import React, {useState} from "react";
 import "./header.css";
 import Search from "../Search/search";
 
-export default ({user, setUser, products}) => {
+export default ({user, setUser, products, setModalActive}) => {
 
-    // const [user, setUser] = useState(localStorage.getItem("ruszzt"));
 
-    // let user = localStorage.getItem("ruszzt")
 
     const logIn = (e) => {
         e.preventDefault();
-        let name = prompt("Ваше имя");
-        if (name) {
-            localStorage.setItem("ruszzt", name);
-            setUser(name);
-        }
+        setModalActive(prev => !prev);
     }
 
     const logOut = (e) => {
