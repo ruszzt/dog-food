@@ -1,12 +1,12 @@
-import React, {useState} from "react";
+import React, {useContext} from "react";
 import {Link} from "react-router-dom";
 import "./header.css";
 import Search from "../Search/search";
+import Ctx from "../../Ctx";
 
-export default ({user, setUser, goods, searchGoods, setModalActive}) => {
+export default ({goods, searchGoods, setModalActive}) => {
 
-
-
+    const {user, setUser} = useContext(Ctx);
     const logIn = (e) => {
         e.preventDefault();
         setModalActive(prev => !prev);

@@ -1,10 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useContext} from "react";
+import Ctx from "../../Ctx";
 
-export default ({change, api, close, setToken}) => {
+export default ({change, close}) => {
     const [inp1, setInp1] = useState(""); /*имейл*/ 
     const [inp2, setInp2] = useState(""); /*пароль*/
     const [inp3, setInp3] = useState(""); /*проверка пароля*/
     const [testPwd, setTestPwd] = useState(true); /*тест пароля на совпадение*/
+    const {api, setToken,} = useContext(Ctx);
     
     const checkPwd = (val, type="main") => {
         type === "main" ? setInp2(val) : setInp3(val);
@@ -26,7 +28,6 @@ export default ({change, api, close, setToken}) => {
         api.signUp(body)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (!data.err) {
                     api.signIn(body)
                         .then(res => res.json())

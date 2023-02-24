@@ -9,7 +9,10 @@
     flex: 1;
     height: 25px;
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 12px;
+    padding-right: 20px; 
     border-radius: 10px;
     border: 1px solid silver;
     font-size: 15px;
@@ -24,6 +27,7 @@
     background-color: transparent;
     border: none;
     height: 20px;
+    gap: 5px;
 }
 .search-block svg {
     height: 100%;

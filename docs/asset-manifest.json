@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.77a52663.css",
-    "main.js": "/static/js/main.adebc20e.js",
-    "index.html": "/index.html",
-    "main.77a52663.css.map": "/static/css/main.77a52663.css.map",
-    "main.adebc20e.js.map": "/static/js/main.adebc20e.js.map"
+    "main.css": "/dog-food/static/css/main.c9ffbcf3.css",
+    "main.js": "/dog-food/static/js/main.bdda63be.js",
+    "static/media/dog4.png": "/dog-food/static/media/dog4.a9e775ef01783344212a.png",
+    "static/media/dogs.jpg": "/dog-food/static/media/dogs.39463ececa83f308e647.jpg",
+    "index.html": "/dog-food/index.html",
+    "static/media/cross.svg": "/dog-food/static/media/cross.60cf68c83c1745a9a5a3497035f6101d.svg",
+    "static/media/magnifier.svg": "/dog-food/static/media/magnifier.06e310dbfbf3ab21da478aef6c037c14.svg",
+    "main.c9ffbcf3.css.map": "/dog-food/static/css/main.c9ffbcf3.css.map",
+    "main.bdda63be.js.map": "/dog-food/static/js/main.bdda63be.js.map"
   },
   "entrypoints": [
-    "static/css/main.77a52663.css",
-    "static/js/main.adebc20e.js"
+    "static/css/main.c9ffbcf3.css",
+    "static/js/main.bdda63be.js"
   ]
 }
