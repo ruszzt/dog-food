@@ -3,7 +3,7 @@ import {Routes, Route} from "react-router-dom";
 import "./style.css";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
-import products from "./assets/data.json";
+// import products from "./assets/data.json";
 import Home from "./pages/Home.jsx";
 import Catalog from "./pages/Catalog.jsx";
 import Modal from "./components/Modal";
@@ -21,6 +21,7 @@ const App = () => {
     const [modalActive, setModalActive] = useState(false);
     const [api, setApi] = useState(new Api(token));
     const [goods, setGoods] = useState([]);
+    const [visibleGoods, setVisibleGoods] = useState(goods);
 
     useEffect(() => {
         setApi(new Api(token));
@@ -54,19 +55,24 @@ const App = () => {
         }
     }, [user]);
 
+    useEffect(() => {
+        setVisibleGoods(goods);
+    }, [goods]);
+
     return (
         <>
             <div className="container">
                 <Header 
                     user={user} 
                     setUser={setUser} 
-                    products={products} 
+                    goods={goods}
+                    searchGoods={setVisibleGoods} 
                     setModalActive={setModalActive}
                 />
                 <main>
                     <Routes>
                         <Route path="/" element={<Home data={smiles}/>}/>
-                        <Route path="/catalog" element={<Catalog data={goods}/>}/>
+                        <Route path="/catalog" element={<Catalog data={visibleGoods}/>}/>
                         <Route path="/profile" element={<Profile setUser={setUser} user={user}/>}/>
                         <Route path="/catalog/:id" element={<Product/>}/>
                     </Routes>

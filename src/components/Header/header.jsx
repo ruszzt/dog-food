@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import "./header.css";
 import Search from "../Search/search";
 
-export default ({user, setUser, products, setModalActive}) => {
+export default ({user, setUser, goods, searchGoods, setModalActive}) => {
 
 
 
@@ -21,7 +21,7 @@ export default ({user, setUser, products, setModalActive}) => {
     return (
         <header>
             <Link className="logo" to="/">DogFood</Link>
-            <Search data={products}/>
+            <Search data={goods} searchGoods={searchGoods}/>
             <nav className="menu">
                 {user && <Link to="/profile">{user}</Link>}
                 {!user && <a href="" onClick={logIn}>Войти</a>}

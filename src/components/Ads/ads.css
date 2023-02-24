@@ -7,10 +7,13 @@
     background-image: url("./img/dogs.jpg");
     background-position: center;
     background-size: cover;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    justify-content: space-around;
+    font-weight: bold;
+    font-size: 20px;
 }
 .promo::before {
     content: "";
