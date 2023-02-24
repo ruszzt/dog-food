@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import {Routes, Route} from "react-router-dom";
 import "./style.css";
 import Header from "./components/Header/header";
 import Footer from "./components/Footer/footer";
@@ -6,7 +7,10 @@ import products from "./assets/data.json";
 import Home from "./pages/Home.jsx";
 import Catalog from "./pages/Catalog.jsx";
 import Modal from "./components/Modal";
+import Profile from "./pages/Profile";
+import Product from "./pages/Product";
 import {Api} from "./Api";
+
 
 
 const smiles = ["-_-", "0_0", ":D", "=*", "@_@", "=)"];
@@ -60,7 +64,13 @@ const App = () => {
                     setModalActive={setModalActive}
                 />
                 <main>
-                    {user ? <Catalog data={goods}/> : <Home data={smiles}/>}
+                    <Routes>
+                        <Route path="/" element={<Home data={smiles}/>}/>
+                        <Route path="/catalog" element={<Catalog data={goods}/>}/>
+                        <Route path="/profile" element={<Profile setUser={setUser} user={user}/>}/>
+                        <Route path="/catalog/:id" element={<Product/>}/>
+                    </Routes>
+                    {/* {user ? <Catalog data={goods}/> : <Home data={smiles}/>} */}
                 </main>
                 <Footer/>
             </div>
