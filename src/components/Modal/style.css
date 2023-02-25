@@ -1,23 +1,26 @@
 .modal-container {
-    display: none;
     position: fixed;
-    background-color: #222B;
+    background-color: #2228;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    z-index: 100;
 }
 .modal {
-    position: relative;
     width: 300px;
-    background-color: #FFF;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 2px 0 #0006, 0 0 8px 2px #0004;
+    display: grid;
     gap: 20px;
+    position: relative;
+    height: auto;
+    overflow: visible;
 }
 .modal h2 {
     margin: 0;
@@ -31,12 +34,12 @@
     border: 2px solid;
     box-sizing: border-box;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -8px;
+    right: -8px;
     cursor: pointer;
 }
 .modal-close:hover {
-    background-color: rgb(255, 213, 73);
+    background-color: rgb(243, 231, 5);
 }
 form {
     display: grid;
@@ -44,25 +47,24 @@ form {
 }
 input {
     flex: 1;
-    height: 25px;
+    height: 30px;
     box-sizing: border-box;
     padding: 6px 12px;
     border-radius: 10px;
     border: 1px solid silver;
-    font-size: 15px;
+    font-size: 16px;
     outline: none;
 }
 input:focus {
-    border-bottom-color: rgb(255, 213, 73);
+    border-color: rgb(243, 231, 5);
 }
 button.btn {
-    background-color: rgb(255, 213, 73);
     border: none;
-    height: 30px;
     border-radius: 10px;
+    background-color: rgb(243, 231, 5);
 }
 button.link {
     background-color: transparent;
-    border: 1px solid rgb(255, 213, 73);
+    border: 1px solid rgb(243, 231, 5);
     box-sizing: border-box;
 }

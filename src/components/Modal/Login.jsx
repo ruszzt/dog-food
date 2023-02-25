@@ -15,15 +15,14 @@ export default ({change, close}) => {
         api.signIn(body)
             .then(res => res.json())
             .then(data => {
-                console.log(data);
-                localStorage.setItem("ruszzt", data.data.name);
+                localStorage.setItem("ruszzt", JSON.stringify(data.data));
                 localStorage.setItem("token8", data.token);
                 setToken(data.token);
                 setInp1("");
                 setInp2("");
                 close(false);
                 if (data.err) {
-                    alert(data.message); /*сделать попап с сообщением об ошибке (неправильный логин или пароль)*/
+                    alert(data.message);
                 }
             })
     }

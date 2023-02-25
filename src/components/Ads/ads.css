@@ -14,6 +14,8 @@
     justify-content: space-around;
     font-weight: bold;
     font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .promo::before {
     content: "";

@@ -7,11 +7,15 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.3",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
     "react-bootstrap-icons": "^1.10.2",
     "react-dom": "^18.2.0",
+    "react-paginate": "^8.1.4",
+    "react-redux": "^8.0.5",
     "react-router": "^6.8.1",
     "react-router-dom": "^6.8.1",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -6,7 +6,7 @@ export default ({change, close}) => {
     const [inp2, setInp2] = useState(""); /*пароль*/
     const [inp3, setInp3] = useState(""); /*проверка пароля*/
     const [testPwd, setTestPwd] = useState(true); /*тест пароля на совпадение*/
-    const {api, setToken,} = useContext(Ctx);
+    const {api, setToken, setUser} = useContext(Ctx);
     
     const checkPwd = (val, type="main") => {
         type === "main" ? setInp2(val) : setInp3(val);
@@ -32,9 +32,10 @@ export default ({change, close}) => {
                     api.signIn(body)
                         .then(res => res.json())
                         .then(data => {
-                            localStorage.setItem("ruszzt", data.data.name);
+                            localStorage.setItem("ruszzt", JSON.stringify(data.data));
                             localStorage.setItem("token8", data.token);
                             setToken(data.token);
+                            setUser(data.data);
                         })
                     setInp1("");
                     setInp2("");

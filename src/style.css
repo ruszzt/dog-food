@@ -2,18 +2,19 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-.container {
+.wrapper {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 100px auto 50px;
 }
-.container>* {
+.wrapper>* {
     padding: 0 calc(50% - 600px);
 }
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
+    align-items: stretch;
 }
 .empty-block {
     display: flex;
@@ -33,9 +34,38 @@ body {
     border-radius: 18px;
     padding: 6px 12px;
 }
+.form-preview {
+    height: 106px;
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+.profile-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-row svg {
+    cursor: pointer;
+    fill: silver; 
+}
+.profile-row svg:hover {
+    cursor: pointer;
+    fill: orange;
+}
+.profile-row:not(:nth-child(2)) {
+    color: grey;
+}
+.profile-row input {
+    max-width: 300px;
+}
+.btn.sort {
+    background-color: #222; 
+    color: orange;
+}
 
 @media (max-width: 1260px) {
-    .container>* {
+    .wrapper>* {
         padding: 0 30px;
     }
     .cards {
