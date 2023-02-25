@@ -51,7 +51,7 @@ body {
 }
 .profile-row svg:hover {
     cursor: pointer;
-    fill: orange;
+    fill: rgba(254, 219, 155, 0.8);
 }
 .profile-row:not(:nth-child(2)) {
     color: grey;
@@ -61,7 +61,18 @@ body {
 }
 .btn.sort {
     background-color: #222; 
-    color: orange;
+    color: rgba(254, 219, 155, 0.8);
+}
+.homeP {
+    color: black;
+    font-weight: bold;
+}
+.catPan {
+    color: black;
+    text-decoration: none;
+}
+.catPan:hover {
+    color: #222222c0;
 }
 
 @media (max-width: 1260px) {

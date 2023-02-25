@@ -59,20 +59,6 @@ export default ({name, pictures, price, likes, _id}) => {
         })
     }
 
-    // useEffect(() => {
-    //     console.log(like, flag);
-    //     if (flag) {
-    //         api.getProducts()
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log(data);
-    //             if (!data.error) {
-    //                 setGoods(data.products);
-    //             }
-    //         })
-    //     }
-    // }, [like]) // true
-
     return (
         <div className="card">
                 <img src={pictures} alt={name} style={{height: "100px"}}/>

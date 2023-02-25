@@ -9,8 +9,8 @@ export default ({data}) => {
     // const {PATH} = useContext(Ctx);
 
     return <>
-        <h1>Главная страница</h1>
-        <Link to="/catalog">Перейти в каталог</Link>
+        <h1 className="homeP">Главная страница</h1>
+        <Link to="/catalog" className="catPan">Перейти в каталог</Link>
         <Ads/>
         <h3>Хиты</h3>
         <div className="cards">

@@ -19,7 +19,7 @@
     outline: none;
 }
 .search-block>input:focus {
-    border-bottom-color: rgb(255, 213, 73);
+    border-bottom-color: rgba(254, 219, 155, 0.8);
 }
 .search-block>button {
     position: absolute;
@@ -33,9 +33,11 @@
     height: 100%;
     fill: silver;
     cursor: pointer;
+    padding-bottom: 3px;
+    margin-bottom: 4px;
 }
 .search-block svg:hover {
-    fill: rgb(255, 213, 73);
+    fill: rgba(254, 219, 155, 0.8);
 }
 .search-result {
     position: absolute;

@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 .modal-close:hover {
-    background-color: rgb(243, 231, 5);
+    background-color: rgba(254, 219, 155, 0.8);
 }
 form {
     display: grid;
@@ -56,15 +56,15 @@ input {
     outline: none;
 }
 input:focus {
-    border-color: rgb(243, 231, 5);
+    border-color: rgba(254, 219, 155, 0.8);
 }
 button.btn {
     border: none;
     border-radius: 10px;
-    background-color: rgb(243, 231, 5);
+    background-color: rgba(254, 219, 155, 0.8);
 }
 button.link {
     background-color: transparent;
-    border: 1px solid rgb(243, 231, 5);
+    border: 1px solid rgba(254, 219, 155, 0.8);
     box-sizing: border-box;
 }
