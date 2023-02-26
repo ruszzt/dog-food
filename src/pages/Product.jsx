@@ -121,17 +121,23 @@ const buy = (e) => {
                         <p>Доставка в пункт выдачи - от 199₽</p>
                     </div>
                     <div className="prod_ads">
-                        <img src="https://sun9-35.userapi.com/yBL8N6RqhGp2XL8fymHxYQMfo7GryiTy8B2RMw/dxT2cem4Akg.jpg" alt="реклама" className="prod_ban_ads"/>
+                        <a href="https://www.eukanuba.com/ru" target="_blank">
+                            <img src="https://sun9-35.userapi.com/yBL8N6RqhGp2XL8fymHxYQMfo7GryiTy8B2RMw/dxT2cem4Akg.jpg" alt="реклама" className="prod_ban_ads"/>
+                        </a>
                     </div>
                     <div>
-                        <div class="photo-container-5">        
-                            <div className="photo-1">
-                                <img src="https://i.pinimg.com/originals/70/af/79/70af7987b23cfb44a9931af20f08b7e3.jpg" />
+                            <div class="photo-container-5">  
+                                <a href="https://www.hillspet.ru/products/cat-food?utm_source=yandex&utm_medium=paidsearch&utm_campaign=hills-pet-nutrition-n/a&utm_content=aed_ru_ru_yandex_brand-ys_text-ads_na_several_na&utm_term=корм%20hills%20для%20кошек#%7C847437031896569164" target="_blank">      
+                                    <div className="photo-1">
+                                        <img src="https://i.pinimg.com/originals/70/af/79/70af7987b23cfb44a9931af20f08b7e3.jpg" />
+                                    </div>
+                                </a>
+                                <a href="https://www.proplan.ru/" target="_blank">
+                                    <div className="photo-2">
+                                        <img src="https://vplate.ru/images/article/orig/2021/10/vse-o-kormah-purina-pro-plan-dlya-sobak.jpg" />
+                                    </div>
+                                </a>
                             </div>
-                            <div className="photo-2">
-                                <img src="https://vplate.ru/images/article/orig/2021/10/vse-o-kormah-purina-pro-plan-dlya-sobak.jpg" />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
