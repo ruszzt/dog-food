@@ -61,10 +61,10 @@ export default ({name, pictures, price, likes, _id}) => {
 
     return (
         <div className="card">
-                <img src={pictures} alt={name} style={{height: "100px"}}/>
-            {name}
+                <img src={pictures} alt={name} style={{height: "100px", cursor: "pointer"}}/>
+            <p>{name}</p>
             <h6>{price} ₽</h6>
-            <button className="btn" onClick={buy}>Купить</button>
+            <button className="btn" onClick={buy}>В корзину</button>
             <span className="card__heart" onClick={update}>
                 {
                     like 

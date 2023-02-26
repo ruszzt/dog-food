@@ -74,6 +74,183 @@ body {
 .catPan:hover {
     color: #222222c0;
 }
+.product_title {
+    display: grid;
+    border: 2px;
+    border-color: #222;
+    grid-template-columns: auto 400px;
+    margin-bottom: 30px;
+    gap: 5px;
+    margin-top: 5px;
+}
+.product_pic {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+    
+}
+.product_view {
+    display: grid;
+}
+.product_view span {
+    font-size: 30px;
+}
+.product_view p {
+    font-size: 20px;
+    font-weight: bold;
+}
+.product_review {
+    display: grid;
+}
+.product_sale {
+    display: grid;
+    height: 800px;
+    grid-template-rows: 200px 400px 200px;
+} 
+.product_fav {
+    background-color: #979797; 
+    padding: 20px;
+    background-color: rgba(243, 239, 239, 0.445);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-color: black;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 7px #222;
+    -moz-box-shadow: 0px 0px 7px #222;
+    box-shadow: 0px 0px 7px #222;
+    grid-template-rows: 4fr;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+.prod_fav_h {
+    font-weight: bold;
+}
+.prod_fav_ban {
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 7px #222;
+    -moz-box-shadow: 0px 0px 7px #222;
+    box-shadow: 0px 0px 7px #222;
+}
+.prod_ban_ads {
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 7px #222;
+    -moz-box-shadow: 0px 0px 7px #222;
+    box-shadow: 0px 0px 7px #222;
+}
+.prod_ads_ban {
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 7px #222;
+    -moz-box-shadow: 0px 0px 7px #222;
+    box-shadow: 0px 0px 7px #222;
+}
+.truck {
+    width: 40px;
+    height: 40px;
+}
+.prod_back {
+    text-decoration: none;
+    color: black;
+    background-color:rgba(254, 219, 155, 0.8);
+    border: 1px solid #dedede;
+    border-radius: 18px;
+    padding: 6px 12px;
+}
+.prod_back:hover {
+    color: black;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    border-color: white;
+}
+.prod_btn {
+    width: 100px;
+    color: black;
+    background-color:rgba(254, 219, 155, 0.8);
+    border: 1px solid #dedede;
+    border-radius: 18px;
+    padding: 6px 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.prod_btn:hover {
+    color: black;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    border-color: white;
+}
+.prod_opt {
+    display: grid;
+    grid-template-rows: 50px 30px 30px;
+    gap: 1x;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+}
+.rater {
+    color: gold;
+    width: 200px;
+    height: 40px;
+    font-size: x-large;
+    gap: 8px;
+    display: flex;
+}
+/*анимация банеров рекламы */
+.photo-container-5 {
+    position: relative;
+}
+.photo-container-5 img {
+    width: 400px;
+    height: 200px;
+    margin-top: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 7px #222;
+    -moz-box-shadow: 0px 0px 7px #222;
+    box-shadow: 0px 0px 7px #222;
+}
+.photo-container-5 .photo-1 {
+    position: relative;
+    animation: brightness 10s linear 5s infinite;
+}
+.photo-container-5 .photo-2 {
+    position: absolute;
+    top: 0;
+    animation: brightness 10s linear infinite;
+}
+@keyframes brightness {
+    0% {
+        opacity: 1;
+    }
+    54% {
+        filter: none;
+    }    
+    58% {
+        opacity: 1;
+    }     
+    59.99999% {
+        filter: brightness(10);
+        z-index: 1;
+    }   
+    60% {
+        opacity: 0;
+        z-index: -1;
+    }     
+}
+/*------------------------------------*/
 
 @media (max-width: 1260px) {
     .wrapper>* {

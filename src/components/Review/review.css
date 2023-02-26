@@ -1,0 +1,26 @@
+.revi_card {
+    border-width: thin;
+    border-color: black;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 6px 9px -5px #222;
+    -moz-box-shadow: 0 6px 9px -5px #222;
+    box-shadow: 0 6px 9px -5px #222;
+    display: grid;
+    margin-bottom: 13px;
+    padding-left: 12px;
+    height: auto;
+    padding-bottom: 7px;
+}
+.person {
+    height: 22px;
+}
+.rate {
+    color: gold;
+}
+.rev_date {
+    font-size: small;
+    padding-top: 10px;
+}
+.text {
+    padding-top: 10px;
+}

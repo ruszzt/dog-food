@@ -18,6 +18,7 @@ import {Api} from "./Api";
 
 
 
+
 const smiles = ["-_-", "0_0", ":D", "@_@"];
 
 const PATH = "/";
@@ -90,6 +91,8 @@ const App = () => {
         localStorage.setItem("basket8", JSON.stringify(basket));
     }, [basket]);
 
+
+
     return (
         <Ctx.Provider value={{
             user: user,
@@ -108,7 +111,7 @@ const App = () => {
             setFavorites: setFavorites,
             basket,
             setBasket,
-            authors
+            authors,
         }}>
             <div className="wrapper">
                 <Header/>
