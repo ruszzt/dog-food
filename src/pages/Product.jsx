@@ -107,7 +107,7 @@ const buy = (e) => {
                     
                     <div className="product_review">{product.description}Lorem, ipsum dolor sit amet consectetur adipisicing elit. At architecto ratione voluptatibus aut. Modi corporis nulla, magnam earum facere labore, animi quae quidem esse expedita quas minus omnis nesciunt sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi inventore illo rerum, laboriosam vel, vitae voluptatem mollitia, qui similique praesentium exercitationem esse quidem odio magnam ipsa iste aperiam sint iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eligendi distinctio quae dolorem fugiat itaque quisquam quasi illo, minima eveniet voluptates tempora, cumque vitae blanditiis porro laudantium odio dicta nemo.</div>
                     <div className="prod_opt">
-                        <h4>Характерситики</h4>
+                        <h4>Характеристики</h4>
                         <p>Вес: {product.wight}</p>
                         <p>Количество: {product.stock} шт </p>
                     </div>

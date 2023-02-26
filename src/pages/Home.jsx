@@ -19,6 +19,7 @@ export default () => {
             {/* {goods.map((el, i) => <Card key={"card_" + i} {...el}/>)} */}
             <Link to="./catalog/622c779c77d63f6e70967d1c">
                 <div className="cart">
+                    <p className="card_discount">15% sale</p>
                     <img src="https://react-learning.ru/image-compressed/1.jpg" alt="Желудки утиные сушено-вяленые" style={{height: "100px", cursor: "pointer"}} />
                     <p className="cart_p">Желудки утиные сушено-вяленые</p>
                     <h6>4500 ₽</h6>
@@ -26,6 +27,7 @@ export default () => {
             </Link>
             <Link to="./catalog/622c77c377d63f6e70967d1d">
                 <div className="cart">
+                    <p className="card_discount">10% sale</p>
                     <img src="https://react-learning.ru/image-compressed/2.jpg" alt="Куриная круrля" style= {{height: "100px", cursor: "pointer"}}/>
                     <p className="cart_p">Куриная круrля</p>
                     <h6>6000 ₽</h6>

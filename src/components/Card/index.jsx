@@ -2,7 +2,7 @@ import React, {useContext, useState, useEffect} from "react";
 import "./index.css";
 import Ctx from "../../Ctx";
 
-export default ({name, pictures, price, likes, _id}) => { 
+export default ({name, pictures, price, likes, _id, discount}) => { 
 
     const {user, setFavorites, api, setGoods, setBasket, setVisibleGoods} = useContext(Ctx);
     const [like, setLike] = useState(likes && likes.includes(user._id));
@@ -59,9 +59,18 @@ export default ({name, pictures, price, likes, _id}) => {
         })
     }
 
+    let cardDisc = (n) => {
+        if (n > 0) {
+            return n + "% sale";
+        } else {
+            return false;
+        }
+    }
+    
     return (
         <div className="card">
-                <img src={pictures} alt={name} style={{height: "100px", cursor: "pointer"}}/>
+            <p className="card_discount">{cardDisc(discount)}</p>
+                <img src={pictures} alt={name} style={{height: "100px", cursor: "pointer"}}></img>
             <p>{name}</p>
             <h6>{price} ₽</h6>
             <button className="btn" onClick={buy}>В корзину</button>

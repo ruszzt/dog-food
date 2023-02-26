@@ -296,6 +296,9 @@ body {
     font-weight: bold;
     margin-top: 30px;
 }
+
+
+
 @keyframes brightness {
     0% {
         opacity: 1;
@@ -323,5 +326,18 @@ body {
     }
     .cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .cards {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .home_ads {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 }

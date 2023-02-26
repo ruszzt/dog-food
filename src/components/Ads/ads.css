@@ -30,3 +30,14 @@
 .promo img {
     width: 400px;
 }
+
+@media (max-width: 720px) {
+    .promo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    .promo img {
+        display: none;
+    }
+}

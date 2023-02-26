@@ -54,9 +54,9 @@ export default () => {
     }
 
     useEffect(() => {
-        if (sortGoods.length === 0) {
+        // if (sortGoods.length === 0) {
             setSortGoods(visibleGoods);
-        }
+        // }
     }, [visibleGoods]);
 
     return <>
