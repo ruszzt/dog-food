@@ -95,6 +95,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-top: 30px;
 }
 .profile-row svg {
     cursor: pointer;
@@ -270,6 +271,30 @@ body {
     position: absolute;
     top: 0;
     animation: brightness 10s linear infinite;
+}
+.quit {
+    text-decoration: none;
+    color: black;
+    background-color:rgba(254, 219, 155, 0.8);
+    border: 1px solid #dedede;
+    border-radius: 18px;
+    padding: 6px 12px;
+}
+.quit:hover {
+    color: black;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s;
+    transition-timing-function: cubic-bezier(0.1, 0.8, 0.5, 2), linear;
+    border-color: white;
+}
+.display-2 {
+    font-size: xx-large;
+}
+.account {
+    font-weight: bold;
+    margin-top: 30px;
 }
 @keyframes brightness {
     0% {

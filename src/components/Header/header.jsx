@@ -50,7 +50,7 @@ export default () => {
                 </Badge>
             </Link>}
             {user && user.name && <Link to="/profile" className="profPan" title="Личный кабинет">{user.name}</Link>}
-            {!user && <a href="" onClick={logIn}>Войти</a>}
+            {!user && <a href="" onClick={logIn} className="prod_back">Войти</a>}
             </nav>
         </header>
     )
